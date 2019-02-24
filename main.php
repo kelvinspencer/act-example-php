@@ -13,8 +13,8 @@ print "...\n";
 //Fetch universe client id and client secret from keystore
 //$universe_cred_url = 'https://api.apify.com/v2/key-value-stores?token='+$_ENV[APIFY_TOKEN]+'&name=my-store-name';
 $url = 'https://api.apify.com/v2/key-value-stores/storeId/records/recordKey?disableRedirect=&token='+$_ENV[APIFY_TOKEN];
-$data = getUrl($url);
-print_r($data);
+//$data = getUrl($url);
+print $url;
 
 //Save to keystore
 //https://api.apify.com/v2/key-value-stores?token=eqMr5hwRGiyFuhZgiRwTyppos&name=my-store-name
