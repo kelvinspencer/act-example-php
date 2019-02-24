@@ -1,6 +1,7 @@
 <?php
-echo "hi";
+print "hi";
 print $_REQUEST['code'];
+
 print "Starting ...\n";
 print "ENV vars:\n";
 print_r($_ENV);
@@ -10,3 +11,5 @@ print "Searching for <h1> tag contents ...\n";
 preg_match_all('/<h1>(.*?)<\/h1>/', $exampleComHtml, $matches);
 print "Found: " . $matches[1][0] . "\n";
 print "I am done!\n";
+
+
