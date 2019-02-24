@@ -1,5 +1,5 @@
 <?php
-
+echo "hi";
 print $_REQUEST['code'];
 print "Starting ...\n";
 print "ENV vars:\n";
