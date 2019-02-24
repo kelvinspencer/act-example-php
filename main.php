@@ -4,7 +4,7 @@ print $_REQUEST['code'];
 
 print "Starting ...\n";
 print "ENV vars:\n";
-print_r($_ENV['APIFY_CONTAINER_URL']);
+print_r($_ENV['APIFY_CONTAINER_URL']+'\n');
 
 print "Fetching http://example.com ...\n";
 $exampleComHtml = file_get_contents('http://example.com');
@@ -12,7 +12,6 @@ print "Searching for <h1> tag contents ...\n";
 preg_match_all('/<h1>(.*?)<\/h1>/', $exampleComHtml, $matches);
 print "Found: " . $matches[1][0] . "\n";
 print "I am done!\n";
-print_r($_SERVER);
-print_r($_REQUEST);
+
 
 
