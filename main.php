@@ -6,7 +6,6 @@ print "Starting ...\n";
 print "ENV vars:\n";
 
 print $_ENV[APIFY_CONTAINER_URL];
-print $_ENV["APIFY_CONTAINER_URL"];
 
 //print_r($_ENV);
 
