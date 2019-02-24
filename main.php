@@ -1,5 +1,6 @@
 <?php
 
+print $_REQUEST['code'];
 print "Starting ...\n";
 print "ENV vars:\n";
 print_r($_ENV);
