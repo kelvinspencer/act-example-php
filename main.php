@@ -4,7 +4,7 @@ print $_REQUEST['code'];
 
 print "Starting ...\n";
 print "ENV vars:\n";
-print_r($_ENV['APIFY_CONTAINER_URL']+'\n');
+print $_ENV['APIFY_CONTAINER_URL']+'\n';
 
 print "Fetching http://example.com ...\n";
 $exampleComHtml = file_get_contents('http://example.com');
